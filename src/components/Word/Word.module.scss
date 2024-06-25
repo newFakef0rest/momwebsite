@@ -19,6 +19,7 @@
 	&__shadow {
 		position: absolute;
 		opacity: 0.1;
+		
 		@media (max-width: 567px) {
 			top: 0;
 			left: 0;
