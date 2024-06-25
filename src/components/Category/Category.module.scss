@@ -1,0 +1,66 @@
+@import '../../scss/vars';
+
+.category {
+	position: relative;
+	overflow: hidden;
+	
+	&__borders {
+		border-top: 1px solid $red;
+		border-bottom: 1px solid $red;
+	}
+	
+	&__item {
+		max-width: 50%;
+		width: 100%;
+		
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	
+	&__imagebox {
+		margin-bottom: -4px;
+	}
+	
+	&__titlebox {
+		padding: 51px 30px 29px;
+		background-color: $lightYellow;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		h3 {
+			color: $red;
+			font-size: 65px;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		
+		button {
+			i {
+				font-size: 30px;
+				color: $red;
+			}
+		}
+	}
+	
+	@media (max-width: 768px) {
+		&__row {
+			flex-direction: column;
+		}
+		
+		&__item {
+			max-width: 100%;
+			border-bottom: 1px solid $red;
+			
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		
+		&__none {
+			display: none;
+		}
+	}
+}

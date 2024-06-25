@@ -1,0 +1,11 @@
+@import '../../scss/vars';
+
+.line {
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	left: 50%;
+	top: 0;
+	background-color: $red;
+	transform: translateX(-50%);
+}

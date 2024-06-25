@@ -1,0 +1,15 @@
+@import '../../scss/vars';
+
+.infobox {
+	padding: 24px 30px 167px;
+	background-color: $lightYellow;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+	
+	&__item {
+		position: relative;
+	}
+	
+}

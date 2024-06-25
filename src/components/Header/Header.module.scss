@@ -1,0 +1,34 @@
+@import '../../scss/vars';
+
+.header {
+	background-color: $lightYellow;
+	padding: 12px 25px 24px;
+	
+	&__row {
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	&__ul {
+		display: flex;
+		flex-wrap: wrap;
+		
+		li {
+			&:not(:last-child) {
+				margin-right: 40px;
+			}
+		}
+		
+		a {
+			display: inline-block;
+			color: $red;
+			text-transform: uppercase;
+			font-family: $Roboto;
+			font-size: 12px;
+		}
+	}
+	
+	&__unvisible {
+		visibility: collapse;
+	}
+}

@@ -1,0 +1,17 @@
+@import '../../scss/vars';
+
+.word {
+	position: relative;
+	display: inline-block;
+	
+	span {
+		color: $red;
+		font-weight: 400;
+		margin-right: 12px;
+	}
+	
+	&__shadow {
+		position: absolute;
+		opacity: 0.1;
+	}
+}

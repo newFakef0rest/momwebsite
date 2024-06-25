@@ -1,0 +1,93 @@
+@import '../../scss/vars';
+
+.news {
+	background-color: $lightYellow;
+	position: relative;
+	
+	&__imagebox {
+		max-width: 50%;
+		width: 100%;
+		
+		img {
+			width: 100%;
+			margin-bottom: -4px;
+		}
+	}
+	
+	&__infobox {
+		position: relative;
+		padding: 26px 26px 150px;
+		
+		h4, p, input, input::placeholder, a {
+			color: $red;
+			font-weight: 400;
+		}
+		
+		h4 {
+			text-transform: capitalize;
+			font-size: 48px;
+			margin-bottom: 31px;
+		}
+		
+		p {
+			font-size: 48px;
+			margin-bottom: 26px;
+			line-height: 56px;
+		}
+	}
+	
+	&__input {
+		&_box {
+			display: flex;
+			
+			input, button {
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
+			
+			input {
+				border: none;
+				outline: none;
+				max-width: 50%;
+				background-color: transparent;
+				border: 2px solid $red;
+				line-height: 37px;
+				padding: 0 4px;
+				width: 100%;
+				font-size: 9px;
+				
+				&::placeholder {
+					line-height: 37px;
+				}
+			}
+		}
+		
+		&_main {
+			input {
+				&:last-child {
+					border-left: none;
+				}
+			}
+		}
+		
+		&_send {
+			input {
+				border-top: none;
+				max-width: 70%;
+			}
+			
+			button {
+				max-width: 30%;
+				width: 100%;
+				color: white;
+				background-color: $red;
+			}
+		}
+	}
+	
+	&__policy {
+		position: absolute;
+		left: 25px;
+		bottom: 22px;
+	}
+}

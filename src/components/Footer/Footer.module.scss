@@ -1,0 +1,45 @@
+@import '../../scss/vars';
+
+.footer {
+	padding: 30px;
+	
+	&__row {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	&__top {
+		margin-bottom: 40px;
+		
+		ul {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			li {
+				margin-right: 26px;
+				
+				&:last-child {
+					margin-right: 0;
+				}
+				
+				a {
+					display: inline-block;
+					color: $red;
+					font-size: 17px;
+				}
+			}
+		}
+		
+	}
+	
+	&__bottom {
+		text-align: center;
+		
+		span, a {
+			font-size: 13px;
+			color: $red;
+			display: inline-block;
+		}
+	}
+}

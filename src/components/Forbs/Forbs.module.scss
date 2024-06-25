@@ -1,0 +1,42 @@
+@import '../../scss/vars';
+
+.forbs {
+	padding: 30px 30px 150px;
+	position: relative;
+	
+	&__items {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	&__titlebox {
+		img {
+			margin-bottom: 44px;
+		}
+	}
+	
+	&__infobox {
+		max-width: 650px;
+		
+		p {
+			font-size: 22px;
+			font-weight: 400;
+			color: $red;
+		}
+	}
+	
+	&__buttonbox {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		button {
+			margin-right: 14px;
+			color: $red;
+		}
+	}
+}
