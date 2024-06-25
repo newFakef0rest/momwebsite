@@ -38,6 +38,22 @@
 			}
 		}
 		
+		@media (max-width: 567px) {
+			&__info {
+				h1 {
+					font-size: 35px;
+				}
+				
+				span {
+					font-size: 15px;
+				}
+				
+				p {
+					font-size: 15px;
+				}
+			}
+		}
+		
 	}
 	
 	&__buttons {
