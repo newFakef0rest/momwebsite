@@ -49,6 +49,9 @@
 			font-size: 22px;
 			font-weight: 300;
 			line-height: 32px;
+			@media (max-width: 567px) {
+				font-size: 18px;
+			}
 		}
 	}
 	
@@ -74,6 +77,24 @@
 		
 		&__image {
 			display: none;
+		}
+	}
+	
+	@media (max-width: 567px) {
+		&__difference {
+			flex-direction: column;
+			
+			&::before {
+				display: none;
+			}
+		}
+		&__item {
+			max-width: 100%;
+			text-align: center;
+			
+			&:first-child {
+				border-bottom: 1px solid $red;
+			}
 		}
 	}
 }

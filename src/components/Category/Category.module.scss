@@ -35,6 +35,9 @@
 			font-size: 65px;
 			text-transform: uppercase;
 			font-weight: 400;
+			@media (max-width: 768px) {
+				font-size: 30px;
+			}
 		}
 		
 		button {
