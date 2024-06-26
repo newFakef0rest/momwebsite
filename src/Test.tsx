@@ -24,7 +24,7 @@ export const Test = () => {
           <Scene />
         </Stage>
       </Suspense>
-      <OrbitControls autoRotate />
+      <OrbitControls autoRotate enableZoom={false} />
     </Canvas>
   );
 };
