@@ -4,8 +4,16 @@ import type { scrollProp } from "../../types.ts";
 import styles from "./Advantages.module.scss";
 
 export const Advantages = ({ scrollYProgress }: scrollProp) => {
-  const rotate = useTransform(scrollYProgress, [0, 1], [-5, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const rotate = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [window.innerWidth > 1000 ? -5 : 0, 0],
+  );
+  const scale = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [window.innerWidth > 1000 ? 0.8 : 1, 1],
+  );
 
   return (
     <motion.div style={{ scale, rotate }} className={styles.advantages}>
