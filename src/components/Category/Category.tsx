@@ -6,7 +6,11 @@ import { Line } from "../Line/Line.tsx";
 import styles from "./Category.module.scss";
 
 export const Category = ({ scrollYProgress }: scrollProp) => {
-  const y = useTransform(scrollYProgress, [0, 1], [-700, 0]);
+  const y = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [window.innerWidth > 991 ? -700 : 0, 0],
+  );
 
   return (
     <div className={styles.category}>
@@ -15,7 +19,7 @@ export const Category = ({ scrollYProgress }: scrollProp) => {
         <div className={`row ${styles.category__row}`}>
           <div className={`${styles.category__item} ${styles.category__women}`}>
             <div className={styles.category__imagebox}>
-              <img src={CategoryWomen} />
+              <img src={CategoryWomen} alt={"Women"} />
             </div>
             <div className={styles.category__titlebox}>
               <h3>Women</h3>
@@ -26,7 +30,7 @@ export const Category = ({ scrollYProgress }: scrollProp) => {
           </div>
           <div className={`${styles.category__item} ${styles.category__men}`}>
             <div className={styles.category__imagebox}>
-              <img src={CategoryMen} />
+              <img src={CategoryMen} alt={"Men"} />
             </div>
             <div className={styles.category__titlebox}>
               <h3>Men</h3>
